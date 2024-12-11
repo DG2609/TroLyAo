@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service Chatbot {
+    rpc GetResponse (ChatRequest) returns (ChatResponse);
+}
+
+message ChatRequest {
+    string query = 1;
+}
+
+message ChatResponse {
+    string reply = 1;
+}
